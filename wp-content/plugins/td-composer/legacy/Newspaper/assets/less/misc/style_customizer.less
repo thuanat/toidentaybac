@@ -1,0 +1,40 @@
+/* theme style customizer */
+
+.td-right-demos-button {
+  font-family: @font1;
+  position: fixed;
+  right: -1px;
+  z-index: 10000;
+  border: 1px solid #e8e8e8;
+  color: #000;
+  text-align: center;
+  font-size: 10px;
+  line-height: 31px;
+  width: 76px;
+  transition: all 0.15s ease;
+
+  /* responsive portrait phone */
+  @media (max-width: @responsive_p_phone_max) {
+    display: none;
+  }
+}
+#td-theme-demos-button {
+  top: 84px;
+  background: #ffffff;
+
+  &:hover {
+    color: #4db2ec;
+    border-color: rgba(77, 178, 236, 0.3);
+  }
+}
+
+#td-theme-buy-button {
+  top: 120px;
+  background: #f4f4f4;
+
+  &:hover {
+    color: #4db2ec;
+    border-color: rgba(77, 178, 236, 0.3);
+    background-color: rgba(77, 178, 236, 0.15);
+  }
+}
